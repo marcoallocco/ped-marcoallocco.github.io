@@ -42,7 +42,7 @@ function MainNavigation() {
                         </NavLink>
                     </Nav.Item>
                     <Nav.Item as="div" className={classes.userProfile}>
-                        <Dropdown title={<Avatar circle src="./src/assets/profilo.jpeg" alt="@nomecognome" />}>
+                        <Dropdown title={<Avatar circle src="/assets/profilo.jpeg" alt="@nomecognome" />}>
                             <Dropdown.Item>Profilo</Dropdown.Item>
                             <Dropdown.Item>Lorem ipsum</Dropdown.Item>
                             <Dropdown.Item>Lorem ipsum</Dropdown.Item>

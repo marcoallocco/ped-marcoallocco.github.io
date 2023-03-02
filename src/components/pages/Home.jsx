@@ -1,8 +1,8 @@
 import { Container, Grid, Row, Col } from 'rsuite';
 import TopHp from "../hp-comp/TopContent"
 
-import banner1 from '../../assets/banner/1.png';
-import banner2 from '../../assets/banner/2.png';
+import banner1 from '/assets/banner/1.png';
+import banner2 from '/assets/banner/2.png';
 import Alerts from "../hp-comp/Alerts";
 import Magazine from "../common/Magazine";
 import BannerFullWidth from "../UI/BannerFullWidth";

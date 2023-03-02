@@ -72,38 +72,44 @@ a:hover {
 
 /* SELECT */
 
-.rs-picker-default .rs-btn, .rs-picker-default .rs-picker-toggle, .rs-picker-input .rs-btn, .rs-picker-input .rs-picker-toggle {
-    background-color: transparent !important;
-    border: 0;
+body {
+  .rs-picker-default .rs-btn, .rs-picker-default .rs-picker-toggle, .rs-picker-input .rs-btn, .rs-picker-input .rs-picker-toggle {
+      background-color: transparent !important;
+      border: 0;
+      color: var(--blue-100);
+      &:focus, &:visited, &:hover {
+          outline: none;
+          box-shadow: none;
+      }
+  }
+  .rs-picker-has-value .rs-btn .rs-picker-toggle-value, .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+      color: var(--blue-100);
+  }
+  .rs-picker.rs-picker-focused, .rs-picker:not(.rs-picker-disabled):hover {
+      border-color: var(--blue-100);
+  }
+  .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret, .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+    fill: var(--blue-100);
+    font-size: 15px;
+    right: 0;
+  }
+  .rs-picker-select-menu-item {
     color: var(--blue-100);
-    &:focus, &:visited, &:hover {
-        outline: none;
-        box-shadow: none;
-    }
-}
-.rs-picker-has-value .rs-btn .rs-picker-toggle-value, .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+  }
+  .rs-picker-select-menu-item.rs-picker-select-menu-item-active,
+  .rs-picker-select-menu-item.rs-picker-select-menu-item-focus, .rs-picker-select-menu-item:focus, .rs-picker-select-menu-item:hover {
     color: var(--blue-100);
+    background-color: var(--lightGray-100);
+  }
 }
-.rs-picker.rs-picker-focused, .rs-picker:not(.rs-picker-disabled):hover {
-    border-color: var(--blue-100);
-}
-.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret, .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
-  fill: var(--blue-100);
-  font-size: 15px;
-  right: 0;
-}
-.rs-picker-select-menu-item {
-  color: var(--blue-100);
-}
-.rs-picker-select-menu-item.rs-picker-select-menu-item-active,
-.rs-picker-select-menu-item.rs-picker-select-menu-item-focus, .rs-picker-select-menu-item:focus, .rs-picker-select-menu-item:hover {
-  color: var(--blue-100);
-  background-color: var(--lightGray-100);
-}
+
+
 
 
 /* DATE PICKER */
-.rwdpDayPickerContainer {
+
+body {
+  .rwdpDayPickerContainer {
     position: relative;
     color: white;
     &::after {
@@ -213,3 +219,4 @@ a:hover {
   }
 }
   
+}

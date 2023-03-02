@@ -12,7 +12,7 @@ const MyCources = () => {
 
     /* Call fake API (es. getMyCources) */
     const getData=()=>{
-        fetch('./src/data/myCources.json'
+        fetch('/data/myCources.json'
         ,{
         headers : { 
             'Content-Type': 'application/json',

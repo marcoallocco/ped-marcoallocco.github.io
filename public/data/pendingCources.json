@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "urlThumb": "/assets/cources/thumbs/2.jpeg",
+    "title": "Hatha Yoga",
+    "durata": "30",
+    "oraInizio": "08:30",
+    "oraFine": "09:15",
+    "category": "cat1",
+    "numeroPending": 2,
+    "pendings": "2",
+    "data": "oggi"
+  }
+]

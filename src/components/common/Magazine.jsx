@@ -12,7 +12,7 @@ const Magazine = () => {
     
     /* Call fake API (es. getNews) */
     const getData=()=>{
-        fetch('./src/data/news.json'
+        fetch('/data/news.json'
         ,{
         headers : { 
             'Content-Type': 'application/json',

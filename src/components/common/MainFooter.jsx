@@ -1,9 +1,9 @@
 import classes from './MainFooter.module.scss';
 import { Container, Grid, Row, Col } from 'rsuite';
 
-import fbImg from "../../assets/footer/fb.svg"
-import instImg from "../../assets/footer/inst.svg"
-import ytbImg from "../../assets/footer/ytb.svg"
+import fbImg from "/assets/footer/fb.svg"
+import instImg from "/assets/footer/inst.svg"
+import ytbImg from "/assets/footer/ytb.svg"
 
 const MainFooter = () => {
     return (

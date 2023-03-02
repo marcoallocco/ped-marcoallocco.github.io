@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-const url = './src/data/allCources.json'
+const url = '/data/allCources.json'
 
 const initialState = {
   courceItems: [],

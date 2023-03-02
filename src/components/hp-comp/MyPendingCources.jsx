@@ -8,7 +8,7 @@ const MyPendingCources = (props) => {
 
     /* Call fake API (es. getPendingCources) */
     const getData=()=>{
-        fetch('./src/data/pendingCources.json'
+        fetch('/data/pendingCources.json'
         ,{
         headers : { 
             'Content-Type': 'application/json',

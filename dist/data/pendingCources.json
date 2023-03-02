@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "urlThumb": "./src/assets/cources/thumbs/2.jpeg",
+    "urlThumb": "/assets/cources/thumbs/2.jpeg",
     "title": "Hatha Yoga",
     "durata": "30",
     "oraInizio": "08:30",
