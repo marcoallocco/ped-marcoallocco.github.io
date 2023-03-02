@@ -1,7 +1,7 @@
 import { Outlet, useNavigation } from 'react-router-dom';
 import { Footer } from 'rsuite';
 
-import MainNavigation from '../MainNavigation';
+import MainNavigation from '../common/MainNavigation';
 import MainFooter from '../common/MainFooter';
 
 function RootLayout() {

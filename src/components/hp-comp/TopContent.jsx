@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import classes from './TopContent.module.scss';
 import { Container, Grid, Row, Col } from 'rsuite';
 import MyCources from './MyCources';
 import MyPendingCources from './MyPendingCources';
 
 const TopContent = () => {
+    const isAuth = useSelector((state) => state.auth.isAuthenticated);
+    
     const [numberOfPendings, setUseNumberOfPendings] = useState(0);
 
     const setNumberOfPendings = (value) => {
@@ -22,7 +25,8 @@ const TopContent = () => {
                 </Col>
                 </Row>
             </Grid>
-            <Grid>
+            {isAuth && (
+                <Grid>
                 <Row>
                 <Col className={[classes.box, classes.boxAttivita].join(' ')} xs={24} md={10}>
                     <h4 className='t-left'><span className="icon-calendar"></span>Le tue prossime attività</h4>
@@ -36,7 +40,8 @@ const TopContent = () => {
                     <MyPendingCources setNumberOfPendings={setNumberOfPendings}></MyPendingCources>
                 </Col>
                 </Row>
-            </Grid>
+                </Grid>  
+            )}
         </>
     );
   }
