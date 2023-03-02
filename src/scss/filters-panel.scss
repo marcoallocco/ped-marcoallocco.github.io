@@ -1,0 +1,41 @@
+.filters-panel-wrapper {
+    .rs-panel {
+        overflow: visible;
+    }
+    @include small {
+        position: absolute;
+        z-index: 99;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+    }
+    .rs-panel-header {
+        display: none;
+        @include small {
+            display: block;
+            background-color: var(--green-100);
+        }
+        & + div {
+            display: block;
+            @include minmedium {
+                height: auto;
+            }
+            @include small {
+                height: 0;
+            }
+        }
+    }
+}
+
+.cources-wrapper {
+    @include small {
+        padding-top: 4rem;
+    }
+}
+
+.rs-picker-menu {
+    @include small {
+        z-index: 99;
+    }
+}

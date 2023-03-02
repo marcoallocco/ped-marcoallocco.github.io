@@ -1,0 +1,215 @@
+/* GENERAL UI */
+
+*:focus, *:hover, *:visited {
+  outline: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: var(--black-100);
+}
+a:hover {
+  opacity: .8;
+}
+
+.t-left {
+    text-align: left;
+}
+.t-right {
+    text-align: right;
+}
+.t-center {
+    text-align: center;
+}
+
+.row-margin {
+  margin: 3rem 0;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.circle-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  background-color: var(--black-100);
+  &.circle-icon--big {
+    width: 15px;
+    height: 15px;
+  }
+  &.circle-icon--blue {
+    background-color: var(--blue-100);
+  }
+}
+
+/* SELECT */
+
+.rs-picker-default .rs-btn, .rs-picker-default .rs-picker-toggle, .rs-picker-input .rs-btn, .rs-picker-input .rs-picker-toggle {
+    background-color: transparent !important;
+    border: 0;
+    color: var(--blue-100);
+    &:focus, &:visited, &:hover {
+        outline: none;
+        box-shadow: none;
+    }
+}
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value, .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: var(--blue-100);
+}
+.rs-picker.rs-picker-focused, .rs-picker:not(.rs-picker-disabled):hover {
+    border-color: var(--blue-100);
+}
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret, .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+  fill: var(--blue-100);
+  font-size: 15px;
+  right: 0;
+}
+.rs-picker-select-menu-item {
+  color: var(--blue-100);
+}
+.rs-picker-select-menu-item.rs-picker-select-menu-item-active,
+.rs-picker-select-menu-item.rs-picker-select-menu-item-focus, .rs-picker-select-menu-item:focus, .rs-picker-select-menu-item:hover {
+  color: var(--blue-100);
+  background-color: var(--lightGray-100);
+}
+
+
+/* DATE PICKER */
+.rwdpDayPickerContainer {
+    position: relative;
+    color: white;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background-color: var(--green-100);
+      width: 80vw;
+      height: 100%;
+      left: -30vw;
+      top: 0;
+      @include small {
+        background-color: var(--blue-100);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      background-color: var(--blue-100);
+      width: 100vw;
+      height: 100%;
+      left: -10vw;
+      top: 0;
+      transform: skew(15deg);
+      @include small {
+        transform: none;
+        left: 0;
+      }
+    }
+    .rwdpDayBoxDesktop {
+      margin: 0 4rem;
+      @include small {
+        margin: 0;
+      }
+      .rwdp-DayCircle-selected {
+        background-color: transparent;
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: 3;
+          background-color: var(--green-100);
+          width: 130%;
+          height: 100%;
+          left: -15%;
+          transform: skew(15deg);
+        }
+        & > * {
+          z-index: 3;
+        }
+      }
+    }
+    .rwdp-DayCircle {
+      z-index: 2;
+      border: 0;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    .rwdpPrevWeekArrow,
+    .rwdpNextWeekArrow {
+      z-index: 3;
+      font-family: "esercizio";
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: var(--green-100);
+        font-size: 20px;
+      }
+    }
+    .rwdpPrevWeekArrow {
+      border: 0;
+      left: 0;
+      &::before {
+        content: "\e904";
+      }
+    }
+    .rwdpNextWeekArrow {
+      border: 0;
+      right: 0;
+      &::before {
+        content: "\e905";
+      }
+    }
+  }
+
+.rwdpDayPickerContainer {
+  .rwdp-DayCircle-today {
+    text-transform: uppercase;
+    color: white;
+    background: var(--blue-100);
+    top: 10px;
+    font-weight: 600;
+  }
+  .rwdp-DayCircle {
+    text-transform: uppercase;
+    @include small {
+      width: 70px;
+    }
+  }
+  .rwdpDayBoxDesktop .rwdp-DayCircle-selected {
+    color: var(--blue-100);
+    .rwdp-DayCircle-today {
+      background-color: var(--green-100);
+      color: var(--blue-100);
+    }
+  }
+}
+  

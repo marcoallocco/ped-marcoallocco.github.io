@@ -1,0 +1,30 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* COLOR VAR */
+  --blue-100: #013066;
+  --green-100: #d4df5d;
+  --orange-100: #e97336;
+  --black-100: #393939;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  color: var(--black-100);
+}

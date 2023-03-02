@@ -1,0 +1,104 @@
+.filtersBar {
+    position: relative;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    transform: skew(15deg);
+    @media (max-width: 700px){
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--green-100);
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 2rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        background-color: var(--green-100);
+        width: 100vw;
+        height: 100%;
+        left: 40%;
+        top: 0;
+        transform: translateX(-50%);
+        @media (max-width: 700px){
+            display: none;
+        }
+    }
+    .selectPlace, .selectCategory, .selectActivity {
+        width: 30%;
+        flex-shrink: 1;
+        z-index: 2;
+        position: relative;
+        transform: skew(-15deg);
+        @media (max-width: 700px){
+            width: 90%;
+            margin: 1rem 0;
+            transform: none;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            transform: translateY(-50%);
+            font-family: "esercizio";
+            color: var(--blue-100);
+            font-size: 22px;
+            @media (max-width: 700px){
+                left: .25rem;
+            }
+        }
+    }
+    .selectPlace {
+        &::before {
+            content: "\e900";
+        }
+    }
+    .selectCategory {
+        &::before {
+            content: "\e909";
+        }
+        select {
+            option[value=cat1] {
+                color: red;
+            }
+        }
+    }
+    .selectActivity {
+        &::before {
+            content: "\e90a";
+        }
+    }
+    .select {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid var(--blue-100);
+        background-color: transparent;
+        color: var(--blue-100);
+        padding: .5rem 1rem 0 2rem;
+        cursor: pointer;
+        @media (max-width: 700px){
+            width: 100% !important;
+        }
+        &:focus, &:visited, &:hover {
+            outline: none;
+        }
+        
+        &.select-place {
+            
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: red;
+            }
+        }
+    }
+}

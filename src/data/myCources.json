@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "urlThumb": "./src/assets/cources/thumbs/2.jpeg",
+    "title": "Hatha Yoga",
+    "durata": "30",
+    "oraInizio": "08:30",
+    "oraFine": "09:15",
+    "category": "cat1",
+    "club": "club1",
+    "sala": "Conscious",
+    "data": "oggi"
+  },
+  {
+    "id": 2,
+    "urlThumb": "./src/assets/cources/thumbs/1.jpeg",
+    "title": "Postural Training",
+    "durata": "45",
+    "oraInizio": "08:30",
+    "oraFine": "09:15",
+    "category": "cat3",
+    "club": "club1",
+    "sala": "Conscious",
+    "data": "oggi"
+  }
+]

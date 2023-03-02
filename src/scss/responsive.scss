@@ -1,0 +1,43 @@
+/* RESPONSIVE */
+
+@include x-large {
+    .rs-grid-container {
+        width: 1200px;
+    }
+}
+@include large {
+
+}
+@include medium {
+    .hidden-medium {
+        display: none;
+    }
+    .rs-grid-container {
+        padding: 0 20px;
+    }
+}
+@include small {
+    .rs-grid-container {
+        padding: 0 20px;
+    }
+    .hidden-medium {
+        display: none;
+    }
+    .hidden-small {
+        display: none;
+    }
+}
+@include x-small {
+    .hidden-medium {
+        display: none;
+    }
+    .hidden-small {
+        display: none;
+    }
+    .hidden-xs {
+        display: none;
+    }
+    .rs-grid-container {
+        padding: 0 20px;
+    }
+}
