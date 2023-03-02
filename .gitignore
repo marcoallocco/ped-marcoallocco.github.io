@@ -1,0 +1,26 @@
+syntax: glob
+
+*.lo
+*.la
+#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
+.DS_Store
+*.pyc
+*.pyo
+%*.php
+*.e3s
+*.e3p
+*.e3t
+*.pik
+*.e3g
+.svn
+.git
+.idea
+
+node_modules/
+package-lock.json
+
