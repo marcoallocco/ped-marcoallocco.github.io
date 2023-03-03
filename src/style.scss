@@ -46,6 +46,9 @@
 
   main {
     min-height: 80vh;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
   }
 
   .rs-container {

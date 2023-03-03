@@ -28,14 +28,14 @@ const TopContent = () => {
             {isAuth && (
                 <Grid>
                 <Row>
-                <Col className={[classes.box, classes.boxAttivita].join(' ')} xs={24} md={10}>
+                <Col className={[classes.box, classes.boxAttivita].join(' ')} xs={24} md={11}>
                     <h4 className='t-left'><span className="icon-calendar"></span>Le tue prossime attività</h4>
                     <MyCources></MyCources>
                 </Col>
-                <Col className={[classes.box, classes.boxAttivita, "hidden-medium"].join(' ')} xs={24} md={4}>
+                <Col className={[classes.box, classes.boxAttivita, "hidden-medium"].join(' ')} xs={24} md={2}>
                     
                 </Col>
-                <Col className={[classes.box, classes.boxAttesa].join(' ')} xs={24} md={10}>
+                <Col className={[classes.box, classes.boxAttesa].join(' ')} xs={24} md={11}>
                     <h4 className='t-left'>Hai {numberOfPendings} attività in lista d'attesa</h4>
                     <MyPendingCources setNumberOfPendings={setNumberOfPendings}></MyPendingCources>
                 </Col>

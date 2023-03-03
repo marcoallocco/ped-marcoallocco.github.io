@@ -45,7 +45,7 @@ const Magazine = () => {
                             </div>
                             <a href="#">Mostra tutti</a>
                         </div>
-                        <div className={classes.newsWrapper}>
+                        <div className={[classes.newsWrapper, 'hp-swiper'].join(' ')}>
                             <Swiper
                             // install Swiper modules
                             modules={[Navigation, Pagination]}

@@ -23,6 +23,14 @@
     }
 }
 
+.hp-swiper {
+    .swiper {
+        @include small {
+            margin-right: -20px;
+        }
+    }
+}
+
 .swiper-cources-wrapper {
     .swiper {
         .swiper-wrapper {
